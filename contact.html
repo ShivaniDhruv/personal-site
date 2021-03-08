@@ -26,10 +26,10 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <if lt IE 9>
+    <!--if lt IE 9>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <endif>
+    <endif-->
 
 </head>
 
@@ -90,19 +90,19 @@
                         <strong>Me</strong>
                     </h2>
                     <hr>
-                    <form role="form">
+                    <form role="form" action="form-handler-nodb.php" method="POST">
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="name" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control">
+                                <input type="text" name="email" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control">
+                                <input type="text" name="phone" class="form-control">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
